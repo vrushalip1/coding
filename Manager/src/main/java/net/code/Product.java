@@ -11,8 +11,11 @@ public class Product {
 	private String name;
 	private String brand;
 	private String madein;
-	private float price;
+	private Integer price;
+	private String actions;
 	
+	
+
 	public Product() {
 		
 	}
@@ -43,12 +46,18 @@ public class Product {
 	public void setMadein(String madein) {
 		this.madein = madein;
 	}
-	public float getPrice() {
+	public Integer getPrice() {
 		return price;
 	}
-	public void setPrice(float price) {
+	public void setPrice(Integer price) {
 		this.price = price;
 	}
-	
+	public String getActions() {
+		return actions;
+	}
+
+	public void setActions(String actions) {
+		this.actions = actions;
+	}
 	
 }
