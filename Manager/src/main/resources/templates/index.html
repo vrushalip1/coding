@@ -28,7 +28,10 @@
 					<td th:text="${product.madein}">Made In</td>
 					<td th:text="${product.price}">Price</td>
 					<td th:text="${product.actions}">Actions</td>
-					
+					<td>
+						<a th:href="/@{'/edit/' + ${product.id}}"Edit</a>
+					</td>
+				</tr>
 			</tbody>
 		</table>
 	</div>
